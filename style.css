@@ -1,0 +1,33 @@
+ h1 {
+        text-align: center;
+    }
+
+.my_profile {
+        position: relative;
+        left: 200px;
+        padding-top: 100px;
+        display: flex;
+}
+
+.prof_picture{
+        border-radius: 25px;
+            
+} 
+
+p {
+    float: right;
+    padding-left: 200px;
+}
+
+.header {         
+    margin-right:25px;
+}
+
+.test{
+    display: flex;
+    justify-content: center;
+}
+img{
+    display: flex;
+}
+
