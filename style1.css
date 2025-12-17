@@ -31,16 +31,18 @@ hr{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .container1{
     width: 90%;
-    max-width: 1200px;
+    max-width: 1200vw;
     min-height: 80vh;
     background-color: #ede1da;
-    margin-bottom: -100px;
+    position: absolute;
+    bottom: 0;
     border-radius: 20px 20px 0 0;
-    
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,12 +51,19 @@ hr{
 }
 h1{
     font-size: 100px;
+    margin-top: -350px;
 }
 .about-me{
+    position: absolute;
+    bottom: 0;
     display: flex;
     width: 100%;
     max-width: 800px;
     gap: 40px;
+}
+
+.about-me p{
+    line-height: 2.0;
 }
 
 
@@ -65,7 +74,7 @@ h1{
 }
 
 .bottom{
-    height: 70vh;
+    height: 90vh;
     background-color: white;  
 }
 
@@ -74,11 +83,30 @@ h1{
 }
 
 .product{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
 
+ .item{
+    width: 250px;
+    text-align: left;
+} 
+
+.item img{
+    width: 100%;
+    display: block;
+}
+
+.item span {
+    
+    font-weight: bold;
+    font-size:larger;
 }
 
 h2{
   margin-left: 20%;  
   font-size: 30px;
+  margin-bottom: 20px;
 }
 

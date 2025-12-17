@@ -1,0 +1,119 @@
+body{
+    margin:0;
+    font-family: "Commissioner", sans-serif;;
+    background-color: black;
+}
+.header{
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+hr{
+    background-color: white;
+    border: none;
+    color: black;
+    margin: 0;
+    height: 2px;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    gap: 40px;
+}
+.top{
+    height: 90vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.pick-item{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.quantity, .price-label{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+h3,h4{
+    color: white;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.price h4, .price h3{
+    margin: 0;
+}
+
+select {
+    width: 200px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.pick-item img{
+    width: 100%;
+    
+}
+
+input[type="number"]{
+    width: 200px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+button{
+    margin-top: 20px;
+    margin-bottom: 20px ;
+    border-radius: 20px;
+}
+
+.bottom{
+    height: 90vh;
+    background-color: white;  
+    justify-content: center;
+    display: flex;
+}
+
+.details h3{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+}
+
+.details form{
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+form input{
+    width: 400px;
+}
+
+.bottom .details{
+    display: flex;
+    flex-direction: column;
+}
