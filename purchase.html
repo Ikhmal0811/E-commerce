@@ -37,13 +37,13 @@
 
                 <label class="quantity">            
                     Quantity:
-                    <input type="number" value="1" min="1">
+                    <input type="number" value="1" min="1" onchange="updateQuantity(this.value)">
                 </label>
 
                 <label class="price-label">
-                    <button>Calculate</button>                
+                    <button onclick="calculate()">Calculate</button>                
                     Total Price:
-                    <input type="text">            
+                    <input type="text" id="total">            
                 </label>
                 
 
@@ -70,11 +70,12 @@
                 <textarea></textarea>
 
             </form>
-            <button onclick="alert('Thank you for the purchase!')" class="purchase">Purchase</button>
+            <button onclick="submitPurchase()" class="submitPurchase">Purchase</button>
         </div>
 
 
     </div>
 
+    <script src="purchase.js"></script>
 </body>
 </html>
