@@ -17,33 +17,35 @@
 
         <div class="container">
             <div class="item-image">
-                    <img src="/picture/car_fragrance.webp" alt="car fragrance">
-                </div>
+                    <img id="item-image" src="/picture/car_fragrance.webp" alt="car fragrance">
+                    
+            </div>
             <div class="pick-item">
                 
                 <h3>Pick your Item</h3>
 
-                <select name="product">
+                <select onclick="selectProduct()" id="itemSelect" name="product">
                         <option value="fragrance">Car Fragrance</option>
                         <option value="car_mat">Car Mat</option>
-                        <option value="fragrance">Car Seat</option>
+                        <option value="car_seat">Car Seat</option>
                 </select> 
                 
                 <div class="price">
                     <h4>Item Price:</h4>
-                    <h3>RM 15.00</h3>
+                    <h3>RM: </h3>
+                    <input id="price" readonly>
                 </div>
                 
 
                 <label class="quantity">            
                     Quantity:
-                    <input type="number" value="1" min="1" onchange="updateQuantity(this.value)">
+                    <input type="number" step="1" onchange="updateQuantity(this.value) ">
                 </label>
 
                 <label class="price-label">
                     <button onclick="calculate()">Calculate</button>                
-                    Total Price:
-                    <input type="text" id="total">            
+                    Total Price (RM):
+                    <input type="text" id="total" readonly>            
                 </label>
                 
 
