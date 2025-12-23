@@ -9,7 +9,7 @@
 <body>
     <div class="header">
         <a href="index.html">HOME</a>
-        <a href="purchase.html">PURCHASE</a>
+        <a href="purchase.php">PURCHASE</a>
     </div>
     <hr>
 
@@ -17,7 +17,7 @@
 
         <div class="container">
             <div class="item-image">
-                    <img id="item-image" src="/picture/car_fragrance.webp" alt="car fragrance">
+                    <img id="item-image" src="picture/car_fragrance.webp" alt="car fragrance">
                     
             </div>
             <div class="pick-item">

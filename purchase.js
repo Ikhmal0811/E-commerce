@@ -13,15 +13,15 @@ function selectProduct(){
     if(productType == "fragrance"){
         document.getElementById("price").value = 15.00;
         productPrice = 15;
-        img.src = "/picture/car_fragrance.webp";
+        img.src = "picture/car_fragrance.webp";
     }else if(productType == "car_mat"){
         document.getElementById("price").value = 20.00;
         productPrice = 20;
-        img.src = "/picture/car_mat.webp";
+        img.src = "picture/car_mat.webp";
     }else{
         document.getElementById("price").value = 25.00;
         productPrice = 25;
-        img.src = "/picture/car_seat.webp";
+        img.src = "picture/car_seat.webp";
     }
 
     
