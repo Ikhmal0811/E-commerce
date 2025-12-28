@@ -50,6 +50,7 @@ hr{
     display: flex;
     flex-direction: column;
     color: white;
+    font-size: 30px;
 }
 
 
