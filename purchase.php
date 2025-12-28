@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project-purchase page</title>
     <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Playwrite+DK+Loopet:wght@100..400&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="header">
         <a href="index.html">HOME</a>
         <a href="purchase.php">PURCHASE</a>
     </div>
-    <hr>
+    <hr>    
 
     <div class="top">
+        
 
         <div class="container">
             <div class="item-image">
@@ -43,7 +47,7 @@
                 </label>
 
                 <label class="price-label">
-                    <button onclick="calculate()">Calculate</button>                
+                    <button class="cal-button" onclick="calculate()">Calculate</button>                
                     Total Price (RM):
                     <input type="text" id="total" readonly>            
                 </label>
@@ -72,11 +76,14 @@
                 <textarea></textarea>
 
             </form>
-            <button onclick="submitPurchase()" class="submitPurchase">Purchase</button>
+            <button class="purchase-button" onclick="submitPurchase()" class="submitPurchase">Purchase</button>
         </div>
 
 
     </div>
+    <footer>
+        <p class="footer-p">Copyright © 2025 Muhammad Ikhmal Fahmi Bin Abd Ghafar</p>
+    </footer>
 
     <script src="purchase.js"></script>
 </body>

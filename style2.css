@@ -4,6 +4,7 @@ body{
     background-color: black;
 }
 .header{
+    font-size: 20px;
     color: white;
     padding: 20px;
     display: flex;
@@ -28,6 +29,7 @@ hr{
     gap: 40px;
 }
 .top{
+    font-size: 20px;
     height: 90vh;
     color: white;
     background-color: black;
@@ -44,10 +46,13 @@ hr{
 }
 
 .quantity, .price-label{
+    font-size: 20px;
     display: flex;
     flex-direction: column;
     color: white;
 }
+
+
 
 .price h4{
     color: white;
@@ -80,10 +85,28 @@ input[type="number"]{
     box-sizing: border-box;
 }
 
-button{
-    margin-top: 20px;
-    margin-bottom: 20px ;
-    border-radius: 20px;
+.purchase-button{
+    margin-top: 10px;
+    color: white;
+    display: inline-block;   
+    font-size: 25px; 
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    cursor: pointer;
+}
+
+.cal-button{
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+button:active{
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 
 .bottom{
@@ -117,4 +140,8 @@ form input{
 .bottom .details{
     display: flex;
     flex-direction: column;
+}
+
+.footer-p{
+    color: white;
 }
