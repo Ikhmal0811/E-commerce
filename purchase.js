@@ -1,5 +1,5 @@
 let currentQty = 1;
-let productPrice = 25;
+let productPrice = 15;
 
 
 
@@ -46,6 +46,7 @@ function calculate(){
 
 
 //function to alert the customer that the product have been purchased
-function submitPurchase(){
-    alert("Thank you for purchasing");
-}
+// function submitPurchase(){
+    
+// }
+

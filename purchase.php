@@ -37,13 +37,13 @@
                 <div class="price">
                     <h4>Item Price:</h4>
                     <h3>RM: </h3>
-                    <input id="price" readonly>
+                    <input placeholder="15" id="price" readonly>
                 </div>
                 
 
                 <label class="quantity">            
                     Quantity:
-                    <input type="number" step="1" onchange="updateQuantity(this.value) ">
+                    <input placeholder="1" type="number" step="1" onchange="updateQuantity(this.value) ">
                 </label>
 
                 <label class="price-label">
@@ -64,25 +64,27 @@
         
         <div class="details">
             <form>
-                <h3>Purchaser Info</h3>
+                <h3>PURCHASER INFO</h3>
 
-                <label>Name</label>                
-                <input type="text">
+                <label>NAME:</label>                
+                <input id="name" name="custName" type="text" required>
 
-                <label>Email:</label>
-                <input type="email">
+                <label>EMAIL:</label>
+                <input id="email" name="custEmail" pattern="[a-z0-9._%+-]+@example\.com$" type="email" required>
 
-                <label>Address</label>
-                <textarea></textarea>
+                <label>ADDRESS:</label>
+                <textarea id="address" name="address" required></textarea>
+
+                <button type="submit" class="purchase-button" onclick="submitPurchase()">Purchase</button>
 
             </form>
-            <button class="purchase-button" onclick="submitPurchase()" class="submitPurchase">Purchase</button>
+            
         </div>
 
 
     </div>
     <footer>
-        <p class="footer-p">Copyright © 2025 Muhammad Ikhmal Fahmi Bin Abd Ghafar</p>
+        <div class="footer-p">Copyright © 2025 Muhammad Ikhmal Fahmi Bin Abd Ghafar</div>
     </footer>
 
     <script src="purchase.js"></script>

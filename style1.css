@@ -74,6 +74,14 @@ h1{
     margin-left: -40px;
 }
 
+.phara a{
+    color: black;
+}
+
+.phara a:active{
+    color: black;
+}
+
 .bottom{
     height: 90vh;
     background-color: white;  
@@ -109,5 +117,9 @@ h2{
   margin-left: 20%;  
   font-size: 30px;
   margin-bottom: 20px;
+}
+
+footer .footer-p{
+    color: white;
 }
 
